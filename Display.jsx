@@ -387,7 +387,7 @@ const Display = ({ Questions,
                         {/* <i class="bx bx-user user"></i> */}
                       </div>
                       <p style={{ fontSize: 20 }}>
-                        <b>001</b>
+                        <b> {studentData.RegNo} </b>
                       </p>
                       <p style={{ fontSize: 21 }}>
                         {studentData != null && (
