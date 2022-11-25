@@ -62,7 +62,7 @@ const Display = ({ Questions,
           setAuthenticating(false)
           container.classList.add("sign-up-mode");
         }
-      }, 5000);
+      }, 25000);
       // if (studentData !== null) {
       //   if (studentData === "error") {
       //     alert("Invalid Credentials")
