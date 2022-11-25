@@ -387,7 +387,10 @@ const Display = ({ Questions,
                         {/* <i class="bx bx-user user"></i> */}
                       </div>
                       <p style={{ fontSize: 20 }}>
-                        <b> {studentData.RegNo} </b>
+                        <b> {RegNo.toString().length == 1 ? <Text style={{ fontSize: 16, fontWeight: 'bold', textAlign: "center" }}>00{RegNo}</Text> :
+                            RegNo.toString().length == 2 ? <Text style={{ fontSize: 16, fontWeight: 'bold', textAlign: "center" }}>0{RegNo}</Text> :
+                            RegNo.toString().length > 2 ? <Text style={{ fontSize: 16, fontWeight: 'bold', textAlign: "center" }}>{RegNo}</Text> :
+                                <Text style={{ fontSize: 16, fontWeight: 'bold', textAlign: "center" }}>0{RegNo}</Text>} </b>
                       </p>
                       <p style={{ fontSize: 21 }}>
                         {studentData != null && (
