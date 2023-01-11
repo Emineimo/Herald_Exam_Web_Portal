@@ -199,7 +199,7 @@ function refresh() {
                   null}
                 </div>
                 <div className="countdown">
-                {minute?
+                {seconds?
                 <div id="countdown">
                 {minute.toString().length > 1 ? (
                   <h1
